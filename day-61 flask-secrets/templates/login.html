@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Login{% endblock %}
+{% block content %}
+    <div class="container">
+    <h1>Login</h1>
+        {{ render_form(form) }} <!-- Create form: What this line of code will do is generate all the labels, inputs, buttons, styling
+		for your form just by taking the WTForm object that was passed to the template (form). -->
+    </div>
+{% endblock %}
